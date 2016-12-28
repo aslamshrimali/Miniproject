@@ -1,0 +1,262 @@
+<html>
+	<head>
+		<script src="./jquery-1.11.3.js"></script>
+		<style>
+			#container
+			{
+				width:100%;border:1px black
+			}
+			#left
+			{
+				float:left;width:200px;border:5px solid black;margin-top:80px
+			}
+			#right
+			{
+				float:right;width:200px;border:5px solid black;margin-top:80px
+			}
+			#center
+			{
+				margin:0 auto;width:600px;border:5px solid black
+			}
+			th,td
+			{	
+				padding-top: 60px;
+			}
+			button
+			{
+				background-color:rgb(204, 18, 12);
+			}
+			#submit,#print
+			{
+				background-color:rgb(204, 18, 12);
+				background:linear-gradient(rgb(204, 18, 12),rgba(255, 0, 0, 0.8));
+				border-radius:10px;
+				paddig-right:5px;
+				box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+			}
+			#tab
+			{
+				border:3px solid black;width:50%;
+			}
+		</style>
+	</head>
+	<body style="background-color:#FFE4C4">
+		<div id="container">
+			<div id="left">
+				<table style="width:100%">
+					<tr >
+						<th>A</th>
+							<td><button  id="A1" style="border:3px solid black">A1</button></td>
+							<td><button  id="A2" style="border:3px solid black">A2</button></td>
+					</tr>
+					<tr>
+						<th>B</th>
+							<td><button  id="B1" style="border:3px solid black">B1</button></td>
+							<td><button  id="B2" style="border:3px solid black">B2</button></td>
+					</tr>
+					<tr>
+						<th>C</th>
+							<td><button  id="C1" style="border:3px solid black">C1</button></td>
+							<td><button  id="C2" style="border:3px solid black">C2</button></td>
+					</tr>
+					<tr>
+						<th>D</th>
+							<td><button  id="D1" style="border:3px solid black">D1</button></td>
+							<td><button  id="D2" style="border:3px solid black">D2</button></td>
+					</tr>
+					<tr>
+						<th>E</th>
+							<td><button  id="E1" style="border:3px solid black">E1</button></td>
+							<td><button  id="E2" style="border:3px solid black">E2</button></td>
+						</tr>
+				</table>
+			</div>
+			<div id="right">
+				<table style="width:100%">
+					<tr>
+						<td><button id="A9" style="border:3px solid black">A9</button></td>
+						<td><button id="A10" style="border:3px solid black">A10</button></td>
+					</tr>
+					<tr>
+						<td><button id="B9" style="border:3px solid black">B9</button></td>
+						<td><button id="B10" style="border:3px solid black">B10</button></td>
+					</tr>
+					<tr>
+						<td><button id="C9" style="border:3px solid black">C9</button></td>
+						<td><button id="C10" style="border:3px solid black">C10</button></td>
+					</tr>
+					<tr>
+						<td><button id="D9" style="border:3px solid black">D9</button></td>
+						<td><button id="D10" style="border:3px solid black">D10</button></td>
+					</tr>
+					<tr>
+						<td><button id="E9" style="border:3px solid black">E9</button></td>
+						<td><button id="E10" style="border:3px solid black">E10</button></td>
+					</tr>
+				</table>  
+			</div>
+			<div id="center">
+				<table style="width:100%">
+					<tr>
+						<th>S</th>
+						<th>C</th>
+						<th>R</th>
+						<th>E</th>
+						<th>E</th>
+						<th>N</th>
+					</tr>
+					<tr>
+						<td><button id="A3" style="border:3px solid black" >A3</button></td>
+						<td><button id="A4" style="border:3px solid black">A4</button></td>
+						<td><button id="A5" style="border:3px solid black">A5</button></td>
+						<td><button id="A6" style="border:3px solid black">A6</button></td>
+						<td><button id="A7" style="border:3px solid black">A7</button></td>
+						<td><button id="A8" style="border:3px solid black">A8</button></td>
+					</tr>
+					<tr>
+						<td><button id="B3" style="border:3px solid black">B3</button></td>
+						<td><button id="B4"style="border:3px solid black">B4</button></td>
+						<td><button id="B5" style="border:3px solid black">B5</button></td>
+						<td><button id="B6" style="border:3px solid black">B6</button></td>
+						<td><button id="B7" style="border:3px solid black">B7</button></td>
+						<td><button id="B8" style="border:3px solid black">B8</button></td>      
+					</tr>
+					<tr>
+						<td><button id="C3" style="border:3px solid black">C3</button></td>
+						<td><button id="C4" style="border:3px solid black">C4</button></td>
+						<td><button id="C5" style="border:3px solid black">C5</button></td>
+						<td><button id="C6" style="border:3px solid black">C6</button></td>
+						<td><button id="C7" style="border:3px solid black">C7</button></td>
+						<td><button id="C8" style="border:3px solid black">C8</button></td>
+					</tr>
+					<tr>
+						<td><button id="D3" style="border:3px solid black">D3</button></td>
+						<td><button id="D4" style="border:3px solid black">D4</button></td>
+						<td><button id="D5"style="border:3px solid black">D5</button></td>
+						<td><button id="D6" style="border:3px solid black">D6</button></td>
+						<td><button id="D7" style="border:3px solid black">D7</button></td>
+						<td><button id="D8" style="border:3px solid black">D8</button></td>
+					</tr>
+					<tr>
+						<td><button id="E1" style="border:3px solid black">E1</button></td>
+						<td><button  id="E2" style="border:3px solid black">E2</button></td>
+						<td><button id="E3" style="border:3px solid black">E3</button></td>
+						<td><button id="E4" style="border:3px solid black">E4</button></td>
+						<td><button id="E5" style="border:3px solid black">E5</button></td>
+						<td><button id="E6" style="border:3px solid black">E6</button></td>
+					</tr>
+
+				</table>
+			</div>
+		</div>
+
+		<div  class="form1" style="float:left;width:45%;border:3px solid black;margin:5px">
+			<p style="margin-left:20px;color:red">Name:</p>
+			<form >
+				<input id ="Name" class="name" style="margin-left:20px" type="text" name="fullName" placeholder="Enter Full Name" value="" required/><br>
+				<span style="margin-left:20px;;color:red"><p >SeatNumber:</p></span>
+				<center><button   id="submit" type="submit">Submit</button></center>
+			</form>
+		</div>
+		<div class="form2" style="float:right;width:45%;border:3px solid black;margin:5px">
+			<p style="color:red"><b><u>Cinemax Ticket</u></b></p>
+			<li></li>
+    		<span style="margin-left:20px;color:red"><p >SeatNumber:</p></span>
+			<center><button id="print" type="Submit" style="margin:8px">Print</button></center>
+		</div>
+	
+		<table id="tab" >
+			<tr>
+				<td>Name</td>
+				<td>Seat Number</td>
+			</tr>
+		</table>
+	
+		<script type="text/javascript">
+
+			var en = en||{};
+				en.getColor =function(){
+				var color ="	#008000";
+				return color;
+				}
+				en.getDefaultColor =function(){
+					var color ="rgb(204, 18, 12)"
+					return color;
+				}
+			en.clicks=0;
+			en.SelectedSeats="";
+			en.Seats=[];
+			var flag=0,cnt=50;
+			$(document).ready( function(){
+				$('#container').on('click','button',function(){       //onClick handler for seat's button
+					en.clicks++;
+					if(en.clicks==0){
+						en.button=$(this);
+						en.Seats.push($(en.button).text());
+						$(this).css("background-color",en.getColor());
+					}
+   
+					for(var i=0;i<en.Seats.length;i++){            
+  						if($(this).text()==en.Seats[i]){       
+							flag=1;
+							$(this).css("background-color",en.getDefaultColor());
+							console.log($(this).text());
+							var removeItem=$(this).text();	
+							en.Seats=jQuery.grep(en.Seats, function(value) {          
+								return value != removeItem;	});
+								break;
+							}
+					}
+					if(flag!=1){
+						flag=0;
+						en.Seats.push($(this).text());           
+						console.log("diff"+$(this).text());
+						$(this).css("background-color",en.getColor());
+					}
+					flag=0;
+				});
+			
+				$('.form1').on('click','button',function(event){      //onClick handler for submit button
+					event.preventDefault();
+					en.name=$('input').val();
+					display();
+					en.SelectedSeats=en.Seats[0];                   
+					for(var j=1;j<en.Seats.length;j++){
+						en.SelectedSeats=en.SelectedSeats+",";
+						en.SelectedSeats=en.SelectedSeats+en.Seats[j];         
+					}
+					console.log(en.SelectedSeats);
+					$('span').text("Seat Number:"+en.SelectedSeats);
+  
+				});
+			
+				function display(){
+					$('li').text("Name:"+en.name);
+				}
+			
+				$('.form2').on('click','button',function(){       //onclick handler for print button
+					cnt=cnt-en.Seats.length;                   
+					console.log(cnt);
+					var SeatId;
+					for(var i=0;i<en.Seats.length;i++){            
+						SeatId='#'+en.Seats[i];                 
+						$(SeatId).css("background-color",en.getDefaultColor());	
+						$(SeatId).prop('disabled',true);	
+					}    
+					element=$('<tr><td>'+en.name+'</td><td>'+en.SelectedSeats+'</td></tr>');
+					$('#tab').append(element);   
+					$('#Name').val("");
+					while(en.Seats.length > 0) {              
+						en.Seats.pop();}                       
+						console.log(en.Seats.length);
+						en.clicks=0;
+						en.SelectedSeats=null;
+						$('li').text("Name:");  
+						$('span').text("Seat Number:");
+				});
+
+
+			});
+		</script>
+	</body>
+</html>
