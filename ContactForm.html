@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Creative - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+	<style type="text/css">
+		header:hover{
+		background-color:white;
+		cursor:auto;
+		}
+		h5{
+			font-weight:bold;
+		}
+		.fruits.inline li{
+			display:inline;	
+		}
+		.fruits.flex{
+			display:flex;
+		}
+		.fruits.flex li{
+			flex:1;
+		}	
+		.fruits.flex li.twice{
+			flex:2;
+		}
+	</style>
+	</head>
+	<body id="page-top">
+		<div class="chapter-header">
+			<div class="header-block">
+				<h3>Exercise Area</h3>
+				<h5>Problem statement No.2</h5>
+			</div>
+			<div class="pull-right">
+				<a href="ex.1-fruit-list.html" class="btn btn-sm btn-default btn-outline">Previous</a>
+			</div>
+		</div>
+		<div class="left-panel">
+			<p>Create a page with a contact form. Here are the contents:-</p>
+			<ul>
+				<li>Page title</li>
+				<li>Form content – fields, labels, mandatory fields & error messages</li>
+				<li>Contact button + another button</li>
+				<li>Alternative signups or logins if any</li>
+			</ul>
+		</div>
+		<div class="base-body">
+			<div style="box-shadow:0px 0px 4px rgba(0,0,0,0.3); float: left; width: 100%;">
+				<article class="bg-primary">
+					<div class="pad-gap">
+						<!----    Write your code here in between     ---->
+						<body >
+							<h3 style="margin:10px">Personal Details</h3>
+							<form>
+								<input style="margin:10px"type="email" id="inputEmail" placeholder="Email" value="" autocomplete="on" autofocus=""  width="400px" required /><br/>
+								<input style="margin:10px"type="text" value="" spellcheck="false" name="Fname" placeholder="FirstName"autocomplete="on" autofocus="" required>
+								<input type="text" value="" spellcheck="false" name="Lname" placeholder="LastName" autofocus="" required><br />
+								<p style="margin:10px">Gender:<input style="margin:10px"type="radio" name="gender" value="male" checked> Male <input style="margin:10px" type="radio" name="gender" value="female"> Female</p>
+								<input style="margin:10px"type="text" value="" spellcheck="false" name="ContactNumber" placeholder="ContactNumber" autofocus="" required><br>
+								<textarea style="margin:10px" rows="4" cols="45" placeholder="CurrentAddress" required></textarea> <br>
+								<select style="margin:10px" required>
+									<option value="" disabled selected>State</option>
+									<option value="Maharashtra" >Maharashtra</option>
+									<option value="Gujrat">Gujrat</option>
+									<option value="Rajsthan">Rajsthan</option>
+									<option value="Karnataka">Karnataka</option>
+								</select>
+								<select style="margin:10px" required>
+									<option value="" disabled selected>City</option>
+									<option value="Pune" >Pune</option>
+									<option value="Mumbai">Mumbai</option>
+									<option value="Nagpur">Nagpur</option>
+									<option value="Nashik">Nashik</option>
+								</select><br>
+								<input style="margin:10px"type="text" value="" spellcheck="false" name="ZipCode" placeholder="ZipCode" autofocus="" required><br />
+								<hr>
+								<h3 style="margin:10px">Tiffin Details</h3>
+								<p style="margin:10px">Selcet Meal: <input style="margin:10px"type="checkbox"  ="Meal" value="Breakfast">Breakfast
+								<input style="margin:10px" input type="checkbox" name="Meal" value="Lunch">Lunch<input style="margin:10px" input type="checkbox" name="Meal" value="Dinner">Dinner</p> 
+								<select style="margin:10px" required>
+									<option value="" disabled selected>Type of Meal</option>
+									<option value="Veg" >Veg</option>
+									<option value="NonVeg">NonVeg</option>
+								</select>
+								<select style="margin:10px" required>
+									<option value="" disabled selected>Select Cuisine</option>
+									<option value="Veg" >NorthIndian</option>
+									<option value="Veg" >SouthIndian</option>
+									<option value="Veg" >Maharashtrian</option>
+									<option value="Veg" >Gujrati</option>
+								</select>
+								<p style="margin:10px">Payment:<input style="margin:10px"type="radio" name="gender" value="weekly" checked> Weekly <input style="margin:10px" type="radio" name="gender" value="Monthly"> Monthly</p>
+								<select style="margin:10px" "width:70px">
+									<option value="" disabled selected>Budget</option>
+									<option value="Veg" >2500-3000</option>
+									<option value="Veg" >2000-2500</option>
+									<option value="Veg" >1500-2000</option>
+								</select><br>
+								<center>	
+									<button style="margin:10px"type="submit">Reset</button>
+									<button style="margin:10px"type="Reset">Submit</button>
+								</center>
+							</form>	
+						</body>
+						<!----    Write your code here in between     ---->
+					</div>
+				</article>
+			</div>
+		</div>
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap Core JavaScript -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Plugin JavaScript -->
+		<script src="js/scrollreveal.min.js"></script>
+		<script src="js/jquery.easing.min.js"></script>
+		<script src="js/jquery.fittext.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<!-- Custom Theme JavaScript -->
+		<script src="js/creative.js"></script>
+	</body>
+</html>
